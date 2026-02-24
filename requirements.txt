@@ -1,5 +1,31 @@
+# ============================================================
+# requirements.txt - Stripe Minions Replica
+# Install: pip install -r requirements.txt
+# ============================================================
+
+# --- LLM Backends ---
 openai>=1.12.0
 anthropic>=0.18.0
+
+# --- Sandbox (Docker) ---
 docker>=7.0.0
+
+# --- GitHub PR Automation ---
+PyGithub>=2.1.1
+
+# --- Slack Bot ---
+slack-bolt>=1.18.0
+
+# --- Data Validation & Config ---
 pydantic>=2.6.1
 python-dotenv>=1.0.1
+
+# --- Code Quality Tools (run inside sandbox) ---
+ruff>=0.3.0
+flake8>=7.0.0
+mypy>=1.8.0
+pytest>=8.0.0
+pytest-cov>=4.1.0
+
+# --- Utilities ---
+requests>=2.31.0
